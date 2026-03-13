@@ -1,0 +1,12 @@
+/* 让文章卡片背景变为半透明 */
+#recent-posts > .recent-post-item {
+    background: rgba(255, 255, 255, 0.3) !important; /* 调整 0.3 到 0.8 之间的数值，数值越小越透明 */
+    backdrop-filter: blur(10px); /* 磨砂玻璃效果，非常漂亮 */
+    border-radius: 20px; /* 如果想让卡片圆角更大，可以改大这个值 */
+}
+
+/* 让侧边栏卡片背景也变为半透明 */
+#aside-content .card-widget {
+    background: rgba(255, 255, 255, 0.3) !important;
+    backdrop-filter: blur(10px);
+}
