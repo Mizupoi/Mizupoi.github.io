@@ -1,20 +1,6 @@
-:root {
-  --global-bg: transparent;
-}
 #page-header.full_page {
-  /* 关键：直接把背景色设为透明，并把静态图设为第一背景 */
-  background-color: transparent !important;
-  background-image: url(/img/123.png) !important;
-  background-attachment: scroll;
-  background-position: center;
-  background-size: cover;
-}
-
-/* 3. 处理 GIF 的覆盖逻辑 */
-/* Butterfly 的 index_img 会被注入到 #page-header 的 style 属性中 */
-/* 我们要确保它加载时是叠加在上面的 */
-#page-header.full_page[style*="background-image"] {
-  /* 当 GIF 加载并注入后，我们要让它和静态图形成多重背景 */
-  /* 注意：这里通过继承和叠加来确保平滑过渡 */
-  background-blend-mode: normal;
+  background-image: url('/img/wallpaper.gif'), url('/img/123.png') !important;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  background-position: center, center;
 }
