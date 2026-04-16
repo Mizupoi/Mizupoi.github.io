@@ -1,6 +1,25 @@
 #page-header.full_page {
-  background-image: url('/img/wallpaper.gif'), url('/img/123.png') !important;
-  background-repeat: no-repeat, no-repeat;
-  background-size: cover, cover;
-  background-position: center, center;
+  background-color: #0d0d0d !important;
+  background-image: url('/img/static_bg.jpg') !important;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+#page-header .video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  pointer-events: none;
+  transition: opacity 1s ease-in-out;
+}
+
+/* 确保文字内容在视频上方 */
+#page-header #site-info,
+#page-header .scroll-down {
+  z-index: 1;
 }
