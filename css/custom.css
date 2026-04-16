@@ -1,0 +1,6 @@
+#page-header.full_page {
+  background-image: url('/img/wallpaper.gif'), url('/img/123.png') !important;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  background-position: center, center;
+}
